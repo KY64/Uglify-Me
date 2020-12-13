@@ -30,7 +30,7 @@ def upload_image():
         filename = f"image.{image_format}"
         path = f"static/uploads/image.{image_format}"
         file.save(path)
-        os.system(f"./program/DisplayImage {path}")
+        os.system(f"./processor/DisplayImage {path}")
         content = {
             "sender_email" : os.environ['SENDER_EMAIL'],
             "receiver_email" : request.form["email"],
