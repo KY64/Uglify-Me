@@ -12,6 +12,7 @@ This is my experimental project to use computer vision as a feature of a website
 * [Linux](https://www.linux.org/pages/download/)
 * [C++](http://www.cplusplus.org/)
 * [Python 3.7+](https://www.python.org/)
+* [Gmail account](https://www.google.com/intl/id/gmail/about/)
 
 ## How to use
 
@@ -59,3 +60,7 @@ dnf install -y cmake g++ wget unzip python3-pip \
     && cmake . \
     && make
 ```
+
+### Sending Email
+
+To send email using your Gmail account, you must [Allow less secure apps](https://myaccount.google.com/lesssecureapps). You can find more about it [here](https://realpython.com/python-send-email/)
