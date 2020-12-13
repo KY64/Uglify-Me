@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  background: #ffecb3;
+  font-family: sans-serif;
+}
+
+form {
+  margin: 0 auto;
+}
+
+input:active, input:focus, input:required:invalid {
+  outline: none;
+  box-shadow: none;
+}
+
+input[type="email"] {
+  border-radius:20px;
+  border: 1px solid rgba(0,0,0,.3);
+  padding: 5px 10px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+input[type="submit"] {
+  display: none;
+}
+
+#form-input {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  margin: 0 auto;
+  margin-top: 22px;
+}
+
+#header {
+  display: block;
+  margin: 16px auto;
+}
+
+#preview {
+  display: block;
+  margin: 16px auto;
+  width: 45%;
+}
+
+
+.button {
+  display: block;
+  background: #ffa000;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #ffb74d;
+}
+
+.button-wrap {
+  text-align: center;
+  margin: 0 auto;
+  color:white;
+  width: 120px;
+}
+
+.content {
+  margin-top: 3em !important;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.submit {
+  align-self: center;
+  padding: 10px 18px;
+  color: white;
+  border-radius: 20px;
+  transition: .2s;
+  background: #ff5722;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background: #ff7043;
+}
+
+@media only screen and (max-width: 650px) {
+  #preview {
+    width: 80%;
+  }
+
+  #form-input {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input[type="email"] {
+    padding: 10px;
+    margin: 0 20px;
+    display: block;
+  }
+
+  h3 {
+    font-size: 10pt;
+  }
+  
+  .submit {
+    display: block;
+    margin: 0 auto;
+    margin-top: 14px;
+  }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+	<title>Uglify Me!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+	<header>
+		<img id="header" src="/static/monkey.png" width="206px" />
+	</header>
+
+	<div class="content">
+		<img src="" id="preview" width="300px"/>
+		<form method="post" action="/upload" enctype="multipart/form-data">
+				<p class="button-wrap">
+					<label class="button" for="upload"> Upload file </label>
+					<input id="upload" type="file" name="file" autocomplete="off" required>
+				</p>
+				<p id="form-input">
+					<input type="email" name="email" placeholder="Insert email here" required/>
+					<label class="submit" for="submit"> Submit </label>
+				<input type="submit" id="submit" value="Submit">
+				</p>
+		</form>
+	</div>
+	<script>
+		document.getElementById("upload").addEventListener("change" , e => {
+					let reader = new FileReader()
+					reader.readAsDataURL(e.target.files[0])
+			reader.onload = function() {
+							document.getElementById('preview').src = reader.result
+							}
+				})
+	</script>
+</body>
